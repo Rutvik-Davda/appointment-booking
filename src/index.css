@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body { font-family: 'Inter', system-ui, sans-serif; }
+
+@layer components {
+  .grad-text { @apply bg-gradient-to-r from-indigo-600 to-cyan-500 bg-clip-text text-transparent; }
+}
+
+/* Toast */
+.Toastify__toast { border-radius: 12px !important; font-family: Inter, sans-serif !important; font-weight: 500 !important; }
+.Toastify__toast--success { background: linear-gradient(135deg, #059669, #10b981) !important; }
+.Toastify__toast--error   { background: linear-gradient(135deg, #dc2626, #ef4444) !important; }
+.Toastify__toast--warning { background: linear-gradient(135deg, #d97706, #f59e0b) !important; }
+.Toastify__toast--info    { background: linear-gradient(135deg, #2563eb, #06b6d4) !important; }
+
+/* FullCalendar */
+.fc .fc-button { background: linear-gradient(135deg,#4f46e5,#0891b2) !important; border:none !important; border-radius:8px !important; font-weight:600 !important; padding:6px 14px !important; }
+.fc .fc-button:hover { opacity:.9 !important; }
+.fc .fc-button-primary:not(:disabled):active,
+.fc .fc-button-primary:not(:disabled).fc-button-active { background: linear-gradient(135deg,#3730a3,#0e7490) !important; }
+.fc-theme-standard .fc-scrollgrid { border-radius:12px; overflow:hidden; }
+.fc .fc-daygrid-day.fc-day-today { background:rgba(99,102,241,0.08) !important; }
+.fc .fc-toolbar-title { font-weight: 800 !important; }
