@@ -6,7 +6,6 @@ import { toast } from 'react-toastify'
 import { CheckCircle2, Lock, Shield, Download, CreditCard } from 'lucide-react'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import jsPDF from 'jspdf'
 import autoTable from 'jspdf-autotable'
 
 export default function Payment() {
